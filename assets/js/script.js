@@ -38,25 +38,20 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-   // emailjs to mail contact form data
     $("#contact-form").submit(function (event) {
-        event.preventDefault(); // Prevent default form submission
+        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-        // Initialize emailjs with your public key
-        emailjs.init('UyrXpgIoodJhN6RCv');
-
-        // Send the form using emailjs.sendForm
-        emailjs.sendForm('contact_service', 'template_contact', this)
+        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset(); // Reset form
+                document.getElementById("contact-form").reset();
                 alert("Form Submitted Successfully");
             }, function (error) {
                 console.log('FAILED...', error);
                 alert("Form Submission Failed! Try Again");
             });
+        event.preventDefault();
     });
-
     // <!-- emailjs to mail contact form data -->
 
 });
@@ -76,7 +71,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Data Analyst", "Python Developer"],
+    strings: ["Data Analyst", "Python Developer", "Power BI Expert", "Tableau", "Front-End Developer"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
