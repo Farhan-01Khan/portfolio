@@ -2,8 +2,8 @@
   {
     "name": "Job Survey Breakdown",
     "desc": "This project analyzes a survey of 630 data professionals from various countries, focusing on job satisfaction, and salary trends.",
-    "image": "Power BI final Dashboard",
-    "category": "MySQL",
+    "image": "powerbi1",
+    "category": "powerBI",
     "links": {
       "code": "https://github.com/Farhan-01Khan/Power-BI-Dashboard"
     }
@@ -12,8 +12,8 @@
   {
     "name": "Dashboard for Product Analysis",
     "desc": "A detailed overview of product sales, revenue, and customer distribution to optimize business performance.",
-    "image": "powerBI",
-    "category": "MySQL",
+    "image": "powerbi2",
+    "category": "powerBI",
     "links": {
       "code": "https://github.com/jigar-sable/flipkart-mern"
     }
